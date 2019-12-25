@@ -131,7 +131,7 @@ If you are using GitHub Actions, you need to setup the following tokens:
 
 ### NPM Token
 
-1. Login at [https://www.npmjs.com/](https://www.npmjs.com/), click your profile icon and go to "Tokens".
+1. Login at <https://www.npmjs.com/>, click your profile icon and go to "Tokens".
 2. Click "Create New Token", make sure the access level is "Read and Publish" and copy the token.
 3. At your GitHub repo, go to "Settings" → "Secrets".
 4. Click "Add a new secret".
@@ -140,10 +140,19 @@ If you are using GitHub Actions, you need to setup the following tokens:
 
 ### GitHub Token
 
-1. Go to https://github.com/settings/tokens/new
+1. Go to <https://github.com/settings/tokens/new>
 2. Check "repo(Full control of private repositories)"
 3. Generate/copy the token
 4. At your GitHub repo, go to "Settings" → "Secrets".
 5. Click "Add a new secret".
    - Name: `GH_TOKEN`
+   - Value: Paste the token from clipboard.
+
+### Slack Incoming Hook
+
+1. Add [Incoming WebHook](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) to your Slack team.
+1. Copy the incoming hook URL.
+1. At your GitHub repo, go to "Settings" → "Secrets".
+1. Click "Add a new secret".
+   - Name: `SLACK_INCOMING_HOOK`
    - Value: Paste the token from clipboard.
