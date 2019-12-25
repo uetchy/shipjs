@@ -141,7 +141,7 @@ If you are using GitHub Actions, you need to setup the following tokens:
 ### GitHub Token
 
 1. Go to <https://github.com/settings/tokens/new>
-2. Check "repo(Full control of private repositories)"
+2. Check `repo` (Full control of private repositories)
 3. Generate/copy the token
 4. At your GitHub repo, go to "Settings" → "Secrets".
 5. Click "Add a new secret".
